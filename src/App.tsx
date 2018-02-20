@@ -1,16 +1,16 @@
 import * as React from 'react';
-import * as classes from './App.scss';
+import * as styles from './App.scss';
 const logo = require('./logo.svg');
 
 class App extends React.Component {
   render() {
     return (
-      <div className={classes.App}>
-        <header className={classes.AppHeader}>
-          <img src={logo} className={classes.AppLogo} alt="logo" />
-          <h1 className={classes.AppTitle}>Welcome to React</h1>
+      <div className={styles.app}>
+        <header className={styles.appHeader}>
+          <img src={logo} className={styles.appLogo} alt="logo" />
+          <h1 className={styles.appTitle}>Welcome to React</h1>
         </header>
-        <p className={classes.AppIntro}>
+        <p className={styles.appIntro}>
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
       </div>
