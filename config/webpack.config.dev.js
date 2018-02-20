@@ -166,6 +166,7 @@ module.exports = {
                 loader: require.resolve('typings-for-css-modules-loader'),
                 options: {
                   importLoaders: 1,
+                  camelCase: true,
                   namedExport: true,
                   modules: true,
                   localIdentName: '[name]__[local]__[hash:base64:5]'
@@ -192,7 +193,10 @@ module.exports = {
                 }
               },
               {
-                loader: 'sass-loader'
+                loader: 'sass-loader',
+                options: {
+                  sourceMap: false
+                }
               }
             ]
           },

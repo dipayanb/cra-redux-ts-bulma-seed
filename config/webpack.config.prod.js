@@ -184,6 +184,7 @@ module.exports = {
                       options: {
                         importLoaders: 1,
                         minimize: true,
+                        camelCase: true,
                         namedExport: true,
                         sourceMap: shouldUseSourceMap,
                         modules: true,
@@ -207,11 +208,15 @@ module.exports = {
                             ],
                             flexbox: 'no-2009'
                           })
-                        ]
+                        ],
+                        sourceMap: shouldUseSourceMap
                       }
                     },
                     {
-                      loader: 'sass-loader'
+                      loader: 'sass-loader',
+                      options: {
+                        sourceMap: shouldUseSourceMap
+                      }
                     }
                   ]
                 },
